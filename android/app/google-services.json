@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "58162900702",
+    "firebase_url": "https://upperlink-test-proj-default-rtdb.firebaseio.com",
+    "project_id": "upperlink-test-proj",
+    "storage_bucket": "upperlink-test-proj.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:58162900702:android:9e0771cb5373729f46dc4f",
+        "android_client_info": {
+          "package_name": "com.example.upperlint_test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "58162900702-l34nv3vjmgtgg442q749ffhltfcntuis.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGdtaTHjCc0uIS_Nz6yBcQUtw_W5Yrpk0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "58162900702-l34nv3vjmgtgg442q749ffhltfcntuis.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "58162900702-c8a9gu65jdq5lb7obd77bqojb6bhhhq3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.upperlintTest"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
