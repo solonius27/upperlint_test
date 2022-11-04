@@ -49,6 +49,7 @@ class _SplashState extends State<Splash> {
     final db = await FirebaseFirestore.instance.collection('users').get().then(
       (res) {
         count = res.size;
+
         print(res.size);
       },
       onError: (e) => print("Error completing: $e"),
