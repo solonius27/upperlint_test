@@ -1,6 +1,9 @@
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:upperlint_test/admin/adminHome.dart';
 
 import '../helpers/cus_widgets.dart';
 
@@ -85,5 +88,20 @@ class _AdminSignInState extends State<AdminSignIn> {
         ));
   }
 
-  void dologin() {}
+  Future<void> dologin() async {
+    if (username.text.isEmpty || pass.text.isEmpty) {
+      showmessage(context, "Username and password is required");
+    }
+
+    try {
+      var response = await FirebaseAuth.instance.signInWithEmailAndPassword(
+          email: username.text, password: pass.text);
+      if (!mounted) return;
+      showmessage(context, "Login Successfull", iserror: false);
+      navigate(context, AdminHome.routeName, delayed: true);
+      //print(response);
+    } on Exception catch (e) {
+      showmessage(context, "Invalid login details");
+    }
+  }
 }
